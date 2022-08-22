@@ -9,16 +9,19 @@
   ;; Color palette definition.
 
   ;; Element colors.
+  (Caret                "#FFCC00")
   (EditorBackground     "#0F111A")
-  (EditorForeground "#8F93A2")
-  ;;(EditorForeground     "gray80")
-  (CommentsForeground "gray35")
-  (SelectionBackground  "#80CBC4")
+  ;;(EditorForeground     "#8F93A2")
+  (EditorForeground     "gray70")
+  (CommentsForeground    "gray45") ;; gray55 in high-bright-version
+  (SelectionBackground  "#333955") ;; Original was #717CB450
   (ModeBarBackground    "#090B10")
   (ModeBarForeground    "#4B526D")
 
+
   (Highlight-Orange "DarkOrange2")
   (Highlight-Gray   "LightSteelBlue")
+
   ;; Text colors.
   (White         "#FFFFFF")
   (Black         "#000000")
@@ -39,9 +42,10 @@
 
  ;; Assign colors to faces.
  ((default (:foreground EditorForeground :background EditorBackground))
-  (cursor  (:background Yellow))
+  (cursor  (:background Caret))
   (region  (:background SelectionBackground))
-  
+  (cua-rectangle (:background SelectionBackground))
+
   (mode-line (:foreground Highlight-Gray :background ModeBarBackground))
   (mode-line-inactive (:foreground ModeBarForeground :background ModeBarBackground))
   (font-lock-warning-face (:foreground Red :weight 'bold))
@@ -56,9 +60,12 @@
 
   (hl-line (:background ModeBarBackground))
 
+  (slime-repl-output-face (:foreground "DarkOrange2"))
+  (slime-repl-inputed-output-face (:foreground Green))
+
   ;; Eshell definitions
   (eshell-prompt (:foreground Blue))
-  (eshell-ls-backup (:foreground "gray50"))
+  (eshell-ls-backup (:foreground CommentsForeground))
   (eshell-ls-directory (:foreground "gold"))
   )
  )
