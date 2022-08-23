@@ -10,12 +10,15 @@
 
   ;; Element colors.
   (Caret                "#FFCC00")
-  (EditorBackground     "#0F111A")
-  ;;(EditorForeground     "#8F93A2")
-  (EditorForeground     "gray70")
+  ;;(EditorBackground     "#0F111A")
+  (EditorBackground     "#090B10")
+  (EditorForeground     "#8F93A2")
+  ;;(EditorForeground     "#9198b3")
+  (EditorForeground      "gray70")
   (CommentsForeground    "gray45") ;; gray55 in high-bright-version
   (SelectionBackground  "#333955") ;; Original was #717CB450
-  (ModeBarBackground    "#090B10")
+  ;;(ModeBarBackground    "#090B10")
+  (ModeBarBackground    "#000000")
   (ModeBarForeground    "#4B526D")
 
 
@@ -55,7 +58,7 @@
   (font-lock-builtin-face (:foreground Blue))
   (font-lock-comment-face (:foreground CommentsForeground))
   (font-lock-string-face (:foreground Green))
-  (font-lock-constant-face (:foreground PaleRed))
+  (font-lock-constant-face (:inherit 'default))
   (font-lock-variable-name-face (:foreground DeepYellow))
 
   (hl-line (:background ModeBarBackground))
@@ -67,6 +70,20 @@
   (eshell-prompt (:foreground Blue))
   (eshell-ls-backup (:foreground CommentsForeground))
   (eshell-ls-directory (:foreground "gold"))
+
+  ;;(magit-section-highlight (:foreground Magenta))
+  (magit-keyword (:foreground Magenta))
+
+  ;; These are identical to Ocean Material HC.
+  (tree-sitter-hl-face:method.call (:inherit 'default))
+  (tree-sitter-hl-face:function.call (:foreground Blue))
+  (tree-sitter-hl-face:variable.parameter (:foreground Red))
+  (tree-sitter-hl-face:variable (:inherit 'default))
+  (tree-sitter-hl-face:operator (:foreground Magenta))
+  (tree-sitter-hl-face:number (:foreground PaleOrange))
+  (tree-sitter-hl-face:method (:foreground Blue))
+  (tree-sitter-hl-face:property (:inherit 'default))
+  (tree-sitter-hl-face:constructor (:inherit 'tree-sitter-hl-face:function))
   )
  )
 
