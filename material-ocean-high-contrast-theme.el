@@ -1,8 +1,8 @@
 (require 'autothemer)
 
 (autothemer-deftheme
- bright-tungsten
- "A theme mostly inspired by the VSCode theme 'Community Material Themes - Ocean High Contrast'"
+ material-ocean-high-contrast
+ "A port of the VSCode theme 'Community Material Themes - Ocean High Contrast'"
 
  ((((class color) (min-colors #xffffff)))
 
@@ -87,4 +87,4 @@
   )
  )
 
-(provide-theme 'bright-tungsten)
+(provide-theme 'material-ocean-high-contrast)
