@@ -6,16 +6,13 @@
 
  ((((class color) (min-colors #xffffff)))
 
-  ;; Color palette definition.
-
   ;; Element colors.
   (Caret                "#FFCC00")
-  ;;(EditorBackground     "#0F111A")
-  (EditorBackground     "#090B10")
-  (EditorForeground     "#8F93A2")
-  ;;(EditorForeground     "#9198b3")
-  (EditorForeground      "gray70")
-  (CommentsForeground    "gray45") ;; gray55 in high-bright-version
+  (EditorBackground     "#0F111A")
+  ;;(EditorBackground     "#090B10")
+  (EditorForeground     "#A6ACCD")
+  ;;(EditorForeground      "gray70")
+  (CommentsForeground    "gray45")
   (SelectionBackground  "#333955") ;; Original was #717CB450
   ;;(ModeBarBackground    "#090B10")
   (ModeBarBackground    "#000000")
@@ -40,7 +37,7 @@
   (PaleRed       "#FF7777")
   (PaleOrange    "#F78C6C")
 
-  ;;(magenta "#FF00FF") ;; ugly color for debugging.
+  (debug "#FF00FF") ;; ugly color for debugging.
   )
 
  ;; Assign colors to faces.
@@ -51,17 +48,20 @@
 
   (mode-line (:foreground Highlight-Gray :background ModeBarBackground))
   (mode-line-inactive (:foreground ModeBarForeground :background ModeBarBackground))
+
+  (fringe (:background ModeBarBackground))
+  (vertical-border (:foreground BrightBlack))
+  (hl-line (:background ModeBarBackground))
+  
   (font-lock-warning-face (:foreground Red :weight 'bold))
   (font-lock-keyword-face (:foreground Cyan :slant 'italic :weight 'bold))
-  (font-lock-function-name-face (:foreground Yellow))
+  (font-lock-function-name-face (:foreground Blue))
   (font-lock-type-face (:foreground Green))
   (font-lock-builtin-face (:foreground Blue))
   (font-lock-comment-face (:foreground CommentsForeground))
   (font-lock-string-face (:foreground Green))
   (font-lock-constant-face (:inherit 'default))
-  (font-lock-variable-name-face (:foreground DeepYellow))
-
-  (hl-line (:background ModeBarBackground))
+  (font-lock-variable-name-face (:inherit 'default))
 
   (slime-repl-output-face (:foreground "DarkOrange2"))
   (slime-repl-inputed-output-face (:foreground Green))
