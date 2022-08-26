@@ -73,6 +73,7 @@
 
   ;;(magit-section-highlight (:foreground Magenta))
   (magit-keyword (:foreground Magenta))
+  (magit-section-highlight (:foreground Green))
 
   ;; These are identical to Ocean Material HC.
   (tree-sitter-hl-face:method.call (:inherit 'default))
@@ -84,6 +85,7 @@
   (tree-sitter-hl-face:method (:foreground Blue))
   (tree-sitter-hl-face:property (:inherit 'default))
   (tree-sitter-hl-face:constructor (:inherit 'tree-sitter-hl-face:function))
+  (tree-sitter-hl-face:constant.builtin (:inherit 'number))
   )
  )
 
