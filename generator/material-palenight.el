@@ -1,21 +1,22 @@
 (require 'autothemer)
 
 (autothemer-deftheme
- material-ocean-high-contrast
+ material-palenight
+ "A port of the VSCode theme 'Community Material Themes - Palenight'"
 
  ((((class color) (min-colors #xffffff)))
 
   ;; Element colors.
   (Caret                "#FFCC00")
-  (EditorBackground     "#0F111A")
+  (EditorBackground     "#292D3E")
   ;;(EditorBackground     "#090B10")
   (EditorForeground     "#A6ACCD")
   ;;(EditorForeground      "gray70")
-  (CommentsForeground    "gray45")
+  (CommentsForeground    "#464B5D")
   (SelectionBackground  "#333955") ;; Original was #717CB450
   ;;(ModeBarBackground    "#090B10")
-  (ModeBarBackground    "#000000")
-  (ModeBarForeground    "#4B526D")
+  (ModeBarBackground    "#1B1E2B")
+  (ModeBarForeground    "#757CA1")
 
   (ScrollBarForeground "#2B2C31") ;;#8F93A230
   (ScrollBarBackground "#131315") ;;#8F93A220
@@ -44,6 +45,7 @@
 
  ;; Insert global-configuration.txt here
 
+ ;; End of global-configuration.txt
  )
 
-(provide-theme 'material-ocean-high-contrast)
+(provide-theme 'material-palenight)

@@ -7,8 +7,20 @@ It's made with autothemer.
 Protip: If there's some mode you'd like me to match the colors from, let me know. Right now,
         the tree sitter defaults are all that is defined.
 
-TODO:
+TODO: Prior to release
 
+- [ ] Line numbers
+- - [ ] Global Config File
+- - [ ] Palenight
+- - [ ] Palenight-hc
+- - [ ] Ocean
+- - [ ] Ocean-hc
+- - [x] Darker
+- - [ ] Darker-hc
+- - [ ] Default
+- - [ ] Default-hc
+
+TODO:
 - [ ] Add support for more font-locking modes
 - [ ] Add the coloring on the quotes for strings. (needs custom faces)
 - - [x] `,."'`, `(){}[]` are cyan; Done in tree-sitter
