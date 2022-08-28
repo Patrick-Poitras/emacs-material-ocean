@@ -18,6 +18,8 @@
   (ModeBarBackground    "#000000")
   (ModeBarForeground    "#4B526D")
 
+  (ScrollBarForeground "#2B2C31") ;;#8F93A230
+  (ScrollBarBackground "#131315") ;;#8F93A220
 
   (Highlight-Orange "DarkOrange2")
   (Highlight-Gray   "LightSteelBlue")
@@ -53,6 +55,7 @@
   (fringe (:background ModeBarBackground))
   (vertical-border (:foreground BrightBlack))
   (hl-line (:background ModeBarBackground))
+  (scroll-bar (:foreground debug))
   
   (font-lock-warning-face (:foreground Red :weight 'bold))
   (font-lock-keyword-face (:foreground Cyan :slant 'italic :weight 'bold))
@@ -66,7 +69,7 @@
   (font-lock-constant-face (:inherit 'default))
   (font-lock-variable-name-face (:inherit 'default))
 
-  (slime-repl-output-face (:foreground "DarkOrange2"))
+  (slime-repl-output-face (:foreground Highlight-Orange))
   (slime-repl-inputed-output-face (:foreground Green))
 
   ;; Eshell definitions
@@ -99,6 +102,8 @@
   (js2-function-param (:inherit 'tree-sitter-hl-face:variable.parameter))
   (js2-function-call (:inherit 'tree-sitter-hl-face:function.call))
  )
+
+ ;; End of global-configuration.txt
  )
 
 (provide-theme 'material-ocean-high-contrast)
