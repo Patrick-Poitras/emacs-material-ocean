@@ -1,11 +1,29 @@
-An emacs theme that ports the very nice VSCode theme "Material Themes - Ocean High Contrast". 
+A port of the VSCode Community Material themes.
+
+The current collection are still a work in progress, and I've only tested the themes with my personal workflow. Please let me know if an element appears to have a clashing color associated to it, since I have to manually add faces in the `global-configuration.txt` file for them to work.
+
+For each of the theme, there are two versions. A "regular" version, which feature a mode bar that doesn't contrast with the background, and the high-contrast version which has a more suitable mode bar. Both versions are provided.
+
+Since these themes are still in development, they are not yet available on MELPA. As such the configuration is a bit more involved.
+
+First, clone the git repo. Alternatively, download the zip file by going to the top of this page and selecting "Download zip" from the "Code" dropdown menu, and extract the contents.
+
+You then need to add the folder to `custom-themes-load-path`. This can be done by adding the following line to your `.emacs` file.
+
+```
+(push "/path/to/directory/folder/emacs-community-material-themes/" custom-theme-load-path)
+```
+
+Then, right below that, add the following line to load the theme.
+```
+(load-theme 'material-ocean-high-contrast t)
+```
 
 See the original pallette [here](https://github.com/material-theme/vsc-material-theme/blob/a0079e8d0cc8711cd81d410827fcc16bcb1f9e6b/scripts/generator/settings/specific/ocean-hc.ts)
 
 It's made with autothemer.
 
-Protip: If there's some mode you'd like me to match the colors from, let me know. Right now,
-        the tree sitter defaults are all that is defined.
+Protip: If there's some mode you'd like me to match the colors from, let me know. 
 
 TODO: Prior to release
 
@@ -19,31 +37,3 @@ TODO: Prior to release
 - - [ ] Darker-hc
 - - [ ] Default
 - - [ ] Default-hc
-
-TODO:
-- [ ] Add support for more font-locking modes
-- [ ] Add the coloring on the quotes for strings. (needs custom faces)
-- - [x] `,."'`, `(){}[]` are cyan; Done in tree-sitter
-- - [ ] "{}" inside strings are orange
-- [ ] Confirm color matching on different languages
-- - [x] Python (some features incompatible between VSCode and tree-sitter
-- - [ ] C/C++
-- - [ ] Rust
-- - - [ ] let, mut => cyan
-- - - [ ] Self => red
-- - - [ ] `$`, `.` in between words => purple
-- - - [ ] impl => orange
-- - - [ ] traits => yellow
-- - - [ ] `thing::thing2::thing3`, need the things to be yellow, and the `::` blue
-- - - [ ] methodcalls are blue
-- - - [ ] impl, pub, fn are orange
-- - - [ ] struct is purple
-- - [x] Javascript
-- - - [ ] Modules are not recognized by tree sitter.
-- - - [ ] hl-face:operator incorrectly unapplied for % ? and : operators
-- - - [ ] `this` is identified primarily as a "builtin", in vscode is gray 
-- - - [ ] Will require some keywords to be manually changed in js2 mode (to purple)
-- [ ] Port the non-high-contrast version
-- [ ] Port all the material themes
-
-Note: This is still very much a work in progress. When it's mostly good for release I'll throw some screenshots up. 
