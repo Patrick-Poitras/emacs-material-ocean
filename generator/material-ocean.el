@@ -1,7 +1,7 @@
 (require 'autothemer)
 
 (autothemer-deftheme
- material-ocean-high-contrast
+ material-ocean
  "A port of the VSCode theme 'Community Material Themes - Ocean'"
 
  ((((class color) (min-colors #xffffff)))
