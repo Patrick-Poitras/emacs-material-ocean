@@ -4,6 +4,10 @@ The current collection is still a work in progress, and I've only tested the the
 
 I'm planning to port all of the community material themes, but for now am only doing the one I like the most (Ocean).
 
+# Screenshot!
+
+![](material-ocean-screenshot.png)
+
 # Installation
 
 Prerequisite is `autothemer`. Install it from MELPA with `M-x package-refresh-contents RET` then `M-x package-install RET autothemer`.
