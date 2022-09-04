@@ -1,23 +1,28 @@
 (require 'autothemer)
 
 (autothemer-deftheme
- material-ocean
+ material-ocean-high-contrast
  "A port of the VSCode theme 'Community Material Themes - Ocean'"
 
  ((((class color) (min-colors #xffffff)))
 
   ;; Element colors.
-  (Caret                "#FFCC00")
-  (EditorBackground     "#0F111A")
+  (Caret                  "#FFCC00")
+  (EditorBackground       "#0F111A")
+  (EditorBackgroundDarker "#090B10")
+
   ;;(EditorBackground     "#090B10")
   (EditorForeground     "#A6ACCD")
   ;;(EditorForeground      "gray70")
-  (CommentsForeground    "gray45")
+  ;;(CommentsForeground    "gray45")
+  (CommentsForeground "#4B526D")
   (SelectionBackground  "#333955") ;; Original was #717CB450
   ;;(ModeBarBackground    "#090B10")
   (ModeBarBackground    "#000000")
-  (ModeBarForeground    "#525975")
-
+  (ModeBarForeground    "#4B526D")
+  
+  (HighlightActiveBackground "#090B10")
+ 
   (ScrollBarForeground "#2B2C31") ;;#8F93A230
   (ScrollBarBackground "#131315") ;;#8F93A220
 
