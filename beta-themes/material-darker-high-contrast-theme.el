@@ -1,29 +1,31 @@
 (require 'autothemer)
 
 (autothemer-deftheme
- material-palenight-high-contrast
- "A port of the VSCode theme 'Community Material Themes - Palenight High Contrast'"
+ material-darker-high-contrast
+ "A port of the VSCode theme 'Community Material Themes - Darker High Contrast'"
 
  ((((class color) (min-colors #xffffff)))
 
   ;; Element colors.
   (Caret                "#FFCC00")
-  (EditorBackground     "#292D3E")
+  (EditorBackground     "#0F111A")
+  (EditorBackgroundDarker "#090B10")
   ;;(EditorBackground     "#090B10")
   (EditorForeground     "#A6ACCD")
   ;;(EditorForeground      "gray70")
-  (CommentsForeground    "#464B5D")
+  ;;(CommentsForeground    "gray45")
+  (CommentsForeground "#4B526D")
   (SelectionBackground  "#333955") ;; Original was #717CB450
   ;;(ModeBarBackground    "#090B10")
-  (ModeBarBackground    "#1B1E2B")
-  (ModeBarForeground    "#676E95")
-
-  (ScrollBarForeground "#2B2C31") ;;#8F93A230
-  (ScrollBarBackground "#131315") ;;#8F93A220
+  (ModeBarBackground    "#000000")
+  (ModeBarForeground    "#4B526D")
+  
+  (ScrollBarForeground "#283A3A") ;;#8F93A230
+  (ScrollBarBackground "#212121") ;;#8F93A220
 
   (Highlight-Orange "DarkOrange2")
-  (Highlight-Gray   "LightSteelBlue")
-
+  (Highlight-Gray   "#EEEEFF")
+  
   ;; Text colors.
   (White         "#FFFFFF")
   (Black         "#000000")
@@ -54,8 +56,9 @@
 
   (fringe (:background ModeBarBackground))
   (vertical-border (:foreground BrightBlack))
-  (hl-line (:background ModeBarBackground))
-  (scroll-bar (:foreground debug))
+  (hl-line (:background HighlightActiveBackground))
+  (scroll-bar (:foreground EditorBackground :background ModeBarBackground))
+  (line-number (:foreground ModeBarForeground :background EditorBackgroundDarker))
   
   (font-lock-warning-face (:foreground Red :weight 'bold))
   (font-lock-keyword-face (:foreground Cyan :slant 'italic :weight 'bold))
@@ -75,7 +78,7 @@
   ;; Eshell definitions
   (eshell-prompt (:foreground Blue))
   (eshell-ls-backup (:foreground CommentsForeground))
-  (eshell-ls-directory (:foreground "gold"))
+  (eshell-ls-directory (:foreground Caret))
 
   ;;(magit-section-highlight (:foreground Magenta))
   (magit-keyword (:foreground Magenta))
@@ -91,19 +94,24 @@
   (tree-sitter-hl-face:number (:foreground PaleOrange))
   (tree-sitter-hl-face:method (:foreground Blue))
   (tree-sitter-hl-face:property (:inherit 'default))
-  ;;(tree-sitter-hl-face:constructor (:inherit 'tree-sitter-hl-face:function))
   (tree-sitter-hl-face:constructor (:foreground Yellow))  
   (tree-sitter-hl-face:constant.builtin (:foreground PaleOrange))
   (tree-sitter-hl-face:punctuation (:foreground Cyan))
   (tree-sitter-hl-face:type (:foreground Yellow))
   (tree-sitter-hl-face:type.builtin (:foreground Yellow))
-  (tree-sitter-hl-face:keyword (:foreground Cyan))
+  (tree-sitter-hl-face:keyword (:inherit 'font-lock-keyword-face))
 
   (js2-function-param (:inherit 'tree-sitter-hl-face:variable.parameter))
   (js2-function-call (:inherit 'tree-sitter-hl-face:function.call))
  )
+) ;;Extra paren for termination
+;;;###autoload
+(when (and (boundp 'custom-theme-load-path)
+           load-file-name)
+  (add-to-list 'custom-theme-load-path
+               (file-name-as-directory (file-name-directory load-file-name))) ;; Missing end-paren
 
  ;; End of global-configuration.txt
  )
 
-(provide-theme 'material-palenight-high-contrast)
+(provide-theme 'material-darker-high-contrast)
