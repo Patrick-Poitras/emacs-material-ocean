@@ -8,6 +8,8 @@ I'm planning to port all of the community material themes, but for now am only d
 
 ![](material-ocean-screenshot.png)
 
+Screenshots are using `tree-sitter-hl-mode` (from `tree-sitter-langs`), the font is Source Code Pro Semibold.
+
 # Installation
 
 Prerequisite is `autothemer`. Install it from MELPA with `M-x package-refresh-contents RET` then `M-x package-install RET autothemer`.
