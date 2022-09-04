@@ -1,7 +1,7 @@
 (require 'autothemer)
 
 (autothemer-deftheme
- material-ocean
+ material-ocean-high-contrast
  "A port of the VSCode theme 'Community Material Themes - Ocean'"
 
  ((((class color) (min-colors #xffffff)))
@@ -58,7 +58,7 @@
   (mode-line-inactive (:foreground ModeBarForeground :background ModeBarBackground))
 
   (fringe (:background ModeBarBackground))
-  (vertical-border (:foreground BrightBlack))
+  ;;(vertical-border (:foreground BrightBlack))
   (hl-line (:background HighlightActiveBackground))
   (scroll-bar (:foreground EditorBackground :background ModeBarBackground))
   (line-number (:foreground ModeBarForeground :background EditorBackgroundDarker))
@@ -88,8 +88,9 @@
   (magit-section-highlight (:foreground Green))
 
   ;; These are identical to Ocean Material HC.
-  (tree-sitter-hl-face:method.call (:inherit 'default))
+  (tree-sitter-hl-face:method.call (:foreground Blue))
   (tree-sitter-hl-face:function (:foreground Blue))
+  (tree-sitter-hl-face:function.macro (:foreground Blue))
   (tree-sitter-hl-face:variable.parameter (:foreground Red))
   (tree-sitter-hl-face:variable.builtin (:foreground Red))
   (tree-sitter-hl-face:variable (:inherit 'default))
