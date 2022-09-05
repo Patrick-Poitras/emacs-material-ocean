@@ -26,9 +26,12 @@
   (ScrollBarForeground "#2B2C31") ;;#8F93A230
   (ScrollBarBackground "#131315") ;;#8F93A220
 
+  ;; Highlight colors are not material, except
+  ;; the ones with hex codes.
   (Highlight-Orange "DarkOrange2")
   (Highlight-Gray   "LightSteelBlue")
-
+  (Highlight-Green  "#C8E6C9") ;; trying this shit
+  
   ;; Text colors.
   (White         "#FFFFFF")
   (Black         "#000000")
@@ -45,11 +48,13 @@
   (PaleRed       "#FF7777")
   (PaleOrange    "#F78C6C")
 
+
   (debug "#FF00FF") ;; ugly color for debugging.
   )
 
  ;; Assign colors to faces.
  ((default (:foreground EditorForeground :background EditorBackground))
+  (button  (:foreground Cyan :underline t))
   (cursor  (:background Caret))
   (region  (:background SelectionBackground))
   (cua-rectangle (:background SelectionBackground))
@@ -58,7 +63,7 @@
   (mode-line-inactive (:foreground ModeBarForeground :background ModeBarBackground))
 
   (fringe (:background ModeBarBackground))
-  ;;(vertical-border (:foreground BrightBlack))
+  (vertical-border (:foreground ModeBarBackground))
   (hl-line (:background HighlightActiveBackground))
   (scroll-bar (:foreground EditorBackground :background ModeBarBackground))
   (line-number (:foreground ModeBarForeground :background EditorBackgroundDarker))
@@ -81,13 +86,44 @@
   ;; Eshell definitions
   (eshell-prompt (:foreground Blue))
   (eshell-ls-backup (:foreground CommentsForeground))
-  (eshell-ls-directory (:foreground Caret))
+  (eshell-ls-directory (:foreground Yellow :weight 'bold))
+  (eshell-ls-symlink (:foreground Cyan))
+  (eshell-ls-executable (:foreground Green))
 
-  ;;(magit-section-highlight (:foreground Magenta))
+  ;; Ido-mode
+  ;; -> ido-indicator (not done)
+  (ido-only-match (:foreground Green :weight 'bold))
+  (ido-subdir (:foreground Yellow))
+
+  ;; Magit mode
   (magit-keyword (:foreground Magenta))
   (magit-section-highlight (:foreground Green))
+  (magit-section-heading (:foreground Yellow))
+  (magit-branch-local (:foreground Cyan))
+  (magit-branch-remote (:foreground Green))
 
-  ;; These are identical to Ocean Material HC.
+  (org-level-1 (:foreground Blue :weight 'bold))
+  (org-level-2 (:foreground Yellow :weight 'bold))
+  (org-level-3 (:foreground Red :weight 'bold))
+  (org-level-4 (:foreground Magenta :weight 'bold))
+  (org-level-5 (:foreground Cyan :weight 'bold))
+  (org-level-6 (:foreground PaleOrange :weight 'bold))
+  (org-level-7 (:foreground Green :weight 'bold))
+  (org-level-8 (:inherit 'default :slant 'italic :weight 'bold))
+  (org-block   (:inherit 'default))
+  (org-todo    (:foreground PaleOrange :weight 'bold :underline t))
+  (org-done    (:foreground Green :weight 'bold :underline t))
+  (org-headline-done (:inherit 'org-done :underline nil))
+  (org-headline-todo (:inherit 'org-todo))
+
+  ;; Other org-mode garbage
+  ;;(org-agenda-done (:inherit 'font-lock-type-face))
+  ;;(org-date (:foreground 
+  ;;(org-sexp-date (:foreground Cyan))
+  ;;(org-date-selected 
+  ;;;; Language font-locking
+
+  ;; Tree-sitter
   (tree-sitter-hl-face:method.call (:foreground Blue))
   (tree-sitter-hl-face:function (:foreground Blue))
   (tree-sitter-hl-face:function.macro (:foreground Blue))
@@ -107,6 +143,8 @@
 
   (js2-function-param (:inherit 'tree-sitter-hl-face:variable.parameter))
   (js2-function-call (:inherit 'tree-sitter-hl-face:function.call))
+
+
  )
 ) ;;Extra paren for termination
 ;;;###autoload
