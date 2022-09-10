@@ -26,12 +26,9 @@
   (ScrollBarForeground "#2B2C31") ;;#8F93A230
   (ScrollBarBackground "#131315") ;;#8F93A220
 
-  ;; Highlight colors are not material, except
-  ;; the ones with hex codes.
   (Highlight-Orange "DarkOrange2")
   (Highlight-Gray   "LightSteelBlue")
-  (Highlight-Green  "#C8E6C9") ;; trying this shit
-  
+
   ;; Text colors.
   (White         "#FFFFFF")
   (Black         "#000000")
@@ -47,7 +44,6 @@
   (DeepYellow    "#FAA452")
   (PaleRed       "#FF7777")
   (PaleOrange    "#F78C6C")
-
 
   (debug "#FF00FF") ;; ugly color for debugging.
   )
@@ -67,6 +63,7 @@
   (hl-line (:background HighlightActiveBackground))
   (scroll-bar (:foreground EditorBackground :background ModeBarBackground))
   (line-number (:foreground ModeBarForeground :background EditorBackgroundDarker))
+  (header-line (:background EditorBackgroundDarker))
   
   (font-lock-warning-face (:foreground Red :weight 'bold))
   (font-lock-keyword-face (:foreground Cyan :slant 'italic :weight 'bold))
@@ -79,6 +76,8 @@
   (font-lock-string-face (:foreground Green))
   (font-lock-constant-face (:inherit 'default))
   (font-lock-variable-name-face (:inherit 'default))
+
+  (minibuffer-prompt (:foreground Cyan :weight 'bold))
 
   (slime-repl-output-face (:foreground Highlight-Orange))
   (slime-repl-inputed-output-face (:foreground Green))

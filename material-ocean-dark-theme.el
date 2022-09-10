@@ -61,6 +61,7 @@
   (hl-line (:background HighlightActiveBackground))
   (scroll-bar (:foreground EditorBackground :background ModeBarBackground))
   (line-number (:foreground ModeBarForeground :background EditorBackgroundDarker))
+  (header-line (:background EditorBackgroundDarker))
   
   (font-lock-warning-face (:foreground Red :weight 'bold))
   (font-lock-keyword-face (:foreground Cyan :slant 'italic :weight 'bold))
@@ -73,6 +74,8 @@
   (font-lock-string-face (:foreground Green))
   (font-lock-constant-face (:inherit 'default))
   (font-lock-variable-name-face (:inherit 'default))
+
+  (minibuffer-prompt (:foreground Cyan :weight 'bold))
 
   (slime-repl-output-face (:foreground Highlight-Orange))
   (slime-repl-inputed-output-face (:foreground Green))
