@@ -11,15 +11,11 @@
    (EditorBackground       "#0F111A")
    (EditorBackgroundDarker "#090B10")
 
-   ;;(EditorBackground     "#090B10")
-   (EditorForeground     "#A6ACCD")
-   ;;(EditorForeground      "gray70")
-   ;;(CommentsForeground    "gray45")
-   (CommentsForeground "#4b526d")
-   (SelectionBackground  "#333955") ;; Original was #717CB450
-   ;;(ModeBarBackground    "#090B10")
-   (ModeBarBackground    "#000000")
-   (ModeBarForeground    "#4B526D")
+   (EditorForeground       "#A6ACCD")
+   (CommentsForeground     "#4b526d")
+   (SelectionBackground    "#333955") ;; Original was #717CB450
+   (ModeBarBackground      "#000000")
+   (ModeBarForeground      "#4B526D")
    
    (HighlightActiveBackground "#090B10")
    
