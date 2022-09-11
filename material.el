@@ -1,4 +1,11 @@
- ;; Assign colors to faces.
+;;; -*- lexical-binding : t -*-
+
+(require 'autothemer)
+(defmacro deftheme-material (name description palette &rest body)
+  `(autothemer-deftheme ,name
+			,description
+			,palette
+;; Assign colors to faces.
  ((default (:foreground EditorForeground :background EditorBackground))
   (button  (:foreground Cyan :underline t))
   (cursor  (:background Caret))
@@ -91,13 +98,5 @@
   (tree-sitter-hl-face:keyword (:inherit 'font-lock-keyword-face))
 
   (js2-function-param (:inherit 'tree-sitter-hl-face:variable.parameter))
-  (js2-function-call (:inherit 'tree-sitter-hl-face:function.call))
-
-
- )
-) ;;Extra paren for termination
-;;;###autoload
-(when (and (boundp 'custom-theme-load-path)
-           load-file-name)
-  (add-to-list 'custom-theme-load-path
-               (file-name-as-directory (file-name-directory load-file-name))) ;; Missing end-paren
+  (js2-function-call (:inherit 'tree-sitter-hl-face:function.call)))
+ ,@body))
