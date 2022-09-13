@@ -14,6 +14,7 @@
 
   (mode-line (:foreground Highlight-Gray :background ModeBarBackground))
   (mode-line-inactive (:foreground ModeBarForeground :background ModeBarBackground))
+  (mode-line-highlight (:box (:line-width 1 :color SelectionBackground :style 'released-button)))
 
   (fringe (:background ModeBarBackground))
   (vertical-border (:foreground ModeBarBackground))
