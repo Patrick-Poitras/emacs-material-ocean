@@ -1,4 +1,4 @@
-(require 'autothemer)
+(load-file (concat (file-name-as-directory (file-name-directory load-file-name)) "material.el"))
 
 (deftheme-material
  material-ocean-dark
