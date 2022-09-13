@@ -1,6 +1,6 @@
 ;;; -*- lexical-binding : t -*-
-
 (require 'autothemer)
+
 (defmacro deftheme-material (name description palette &rest body)
   `(autothemer-deftheme ,name
 			,description
@@ -21,6 +21,8 @@
   (scroll-bar (:foreground EditorBackground :background ModeBarBackground))
   (line-number (:foreground ModeBarForeground :background EditorBackgroundDarker))
   (header-line (:background EditorBackgroundDarker))
+  (link (:foreground Cyan :underline t))
+  (minibuffer-prompt (:foreground Cyan :weight 'bold))
   
   (font-lock-warning-face (:foreground Red :weight 'bold))
   (font-lock-keyword-face (:foreground Cyan :slant 'italic :weight 'bold))
@@ -31,11 +33,10 @@
   (font-lock-builtin-face (:foreground Blue))
   (font-lock-comment-face (:foreground CommentsForeground))
   (font-lock-string-face (:foreground Green))
-  (font-lock-constant-face (:inherit 'default))
+  (font-lock-constant-face (:foreground PaleOrange))
   (font-lock-variable-name-face (:inherit 'default))
 
-  (minibuffer-prompt (:foreground Cyan :weight 'bold))
-
+  ;; Slime definitions
   (slime-repl-output-face (:foreground Highlight-Orange))
   (slime-repl-inputed-output-face (:foreground Green))
 
@@ -48,8 +49,8 @@
 
   ;; Ido-mode
   ;; -> ido-indicator (not done)
-  (ido-only-match (:foreground Green :weight 'bold))
-  (ido-subdir (:foreground Yellow))
+  (ido-only-match (:foreground Green))
+  (ido-subdir (:foreground Yellow :weight 'bold))
 
   ;; Magit mode
   (magit-keyword (:foreground Magenta))
