@@ -13,13 +13,14 @@
   ;;(EditorBackground     "#090B10")
   (EditorForeground     "#A6ACCD")
   ;;(EditorForeground      "gray70")
-  (CommentsForeground    "gray45")
+  (CommentsForeground     "#4B526D")
   (SelectionBackground  "#333955") ;; Original was #717CB450
   ;;(ModeBarBackground    "#090B10")
   (ModeBarBackground    "#0F111A")
   (ModeBarForeground    "#525975")
 
   (HighlightActiveBackground "#090B10")
+  (LineNumberUnselected "#252836")
 
   (ScrollBarForeground "#2B2C31") ;;#8F93A230
   (ScrollBarBackground "#131315") ;;#8F93A220
