@@ -20,7 +20,8 @@
   (vertical-border (:foreground ModeBarBackground))
   (hl-line (:background HighlightActiveBackground))
   (scroll-bar (:foreground EditorBackground :background ModeBarBackground))
-  (line-number (:foreground ModeBarForeground :background EditorBackgroundDarker))
+  (line-number (:foreground LineNumberUnselected :background EditorBackground))
+  (line-number-current-line (:foreground ModeBarForeground :background EditorBackgroundDarker))
   (header-line (:background EditorBackgroundDarker))
   (link (:foreground Cyan :underline t))
   (minibuffer-prompt (:foreground Cyan :weight 'bold))
@@ -47,6 +48,7 @@
   (eshell-ls-directory (:foreground Yellow :weight 'bold))
   (eshell-ls-symlink (:foreground Cyan))
   (eshell-ls-executable (:foreground Green))
+  (eshell-ls-readonly (:foreground PaleOrange))
 
   ;; Ido-mode
   ;; -> ido-indicator (not done)
@@ -84,6 +86,7 @@
   ;; Tree-sitter
   (tree-sitter-hl-face:method.call (:foreground Blue))
   (tree-sitter-hl-face:function (:foreground Blue))
+  (tree-sitter-hl-face:function.call (:foreground Blue))
   (tree-sitter-hl-face:function.macro (:foreground Blue))
   (tree-sitter-hl-face:variable.parameter (:foreground Red))
   (tree-sitter-hl-face:variable.builtin (:foreground Red))

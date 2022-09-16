@@ -12,12 +12,13 @@
    (EditorBackgroundDarker "#090B10")
 
    (EditorForeground       "#A6ACCD")
-   (CommentsForeground     "#4b526d")
+   (CommentsForeground     "#4B526D")
    (SelectionBackground    "#333955") ;; Original was #717CB450
    (ModeBarBackground      "#000000")
    (ModeBarForeground      "#4B526D")
    
    (HighlightActiveBackground "#090B10")
+   (LineNumberUnselected "#252836")
    
    (ScrollBarForeground "#2B2C31") ;;#8F93A230
    (ScrollBarBackground "#131315") ;;#8F93A220
