@@ -51,6 +51,8 @@
    (B-DiffFineBackground     "#23494C")
    (C-DiffCurrentBackground  "#423D0F")
    (C-DiffFineBackground     "#5C5618")
+   (Add-DiffCurrentBackground "#17380C")
+   (Add-DiffFineBackground "#224E14")
    ))
 
 
