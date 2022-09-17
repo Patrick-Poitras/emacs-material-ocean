@@ -50,6 +50,20 @@
   (eshell-ls-executable (:foreground Green))
   (eshell-ls-readonly (:foreground PaleOrange))
 
+  ;; Ediff
+ (ediff-even-diff-A (:background DiffInactiveBackground))
+ (ediff-even-diff-B (:background DiffInactiveBackground))
+ (ediff-even-diff-C (:background DiffInactiveBackground))
+ (ediff-odd-diff-A  (:background DiffInactiveBackground))
+ (ediff-odd-diff-B  (:background DiffInactiveBackground))
+ (ediff-odd-diff-C  (:background DiffInactiveBackground))
+ (ediff-current-diff-A (:background A-DiffCurrentBackground))
+ (ediff-fine-diff-A    (:background A-DiffFineBackground))
+ (ediff-current-diff-B (:background B-DiffCurrentBackground))
+ (ediff-fine-diff-B    (:background B-DiffFineBackground))
+ (ediff-current-diff-C (:background C-DiffCurrentBackground))
+ (ediff-fine-diff-C    (:background C-DiffFineBackground))
+
   ;; Ido-mode
   ;; -> ido-indicator (not done)
   (ido-only-match (:foreground Green))

@@ -45,6 +45,14 @@
   (PaleOrange    "#F78C6C")
 
   (debug "#FF00FF") ;; ugly color for debugging.
+
+  (DiffInactiveBackground   "#0E152D") ;; todo, find something else?
+  (A-DiffCurrentBackground  "#3F0E15")
+  (A-DiffFineBackground     "#581720")
+  (B-DiffCurrentBackground  "#153B3F") ;; really nice, use for magit?
+  (B-DiffFineBackground     "#23494C")
+  (C-DiffCurrentBackground  "#423D0F")
+  (C-DiffFineBackground     "#5C5618")
   ))
 
 ;;;###autoload
