@@ -82,6 +82,12 @@
   (eshell-ls-symlink (:foreground Cyan))
   (eshell-ls-executable (:foreground Green))
   (eshell-ls-readonly (:foreground PaleOrange))
+  (eshell-ls-archive (:foreground Magenta))
+  ;;eshell-ls-clutter
+  ;;eshell-ls-product
+  ;;eshell-ls-missing
+  ;;eshell-ls-special
+  ;;eshell-ls-unreadable
 
   ;; Ediff
   (ediff-even-diff-A (:background DiffInactiveBackground))

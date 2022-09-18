@@ -37,12 +37,13 @@ Let me know if you'd like me to add your favorite mode. I'll prioritize adding i
 * tree-sitter-hl-mode
 * magit-mode
 * diff/ediff
+* eshell
 * org-mode
-
 
 Coming soon:
 * dired
 * slime
+* markdown
 
 # Notes
 
