@@ -34,7 +34,7 @@ Then, right below that, add the following line to load the theme.
 I'm continuously adding new modes at the moment, so this list will change.
 Let me know if you'd like me to add your favorite mode. I'll prioritize adding it.
 
-* tree-sitter-hl-mode (needs checking)
+* tree-sitter-hl-mode
 * magit-mode
 * diff/ediff
 * org-mode
