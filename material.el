@@ -48,7 +48,7 @@
   (window-divider (:foreground ModeBarBackground))
 
   (success (:weight 'bold :foreground Green))
-  (warning (:weight 'bold :foreground PaleOrange))
+  (warning (:weight 'bold :foreground Highlight-Orange))
   (error (:weight 'bold :foreground Red))
 
   (trailing-whitespace (:background "red2"))
@@ -70,10 +70,6 @@
   (font-lock-string-face (:foreground Green))
   (font-lock-constant-face (:foreground PaleOrange))
   (font-lock-variable-name-face (:inherit 'default))
-
-  ;; Slime definition
-  (slime-repl-output-face (:foreground Highlight-Orange))
-  (slime-repl-inputed-output-face (:foreground Green))
 
   ;; Eshell definitions
   (eshell-prompt (:foreground Blue))
@@ -320,12 +316,34 @@
   (outline-7 (:foreground Green))  
   (outline-8 (:foreground PaleOrange))
   
-  ;; Other org-mode garbage
-  ;;(org-agenda-done (:inherit 'font-lock-type-face))
-  ;;(org-date (:foreground 
-  ;;(org-sexp-date (:foreground Cyan))
-  ;;(org-date-selected 
   ;;;; Language font-locking
+  ;;Slime/sldb
+  (slime-repl-output-face (:foreground PaleOrange :slant 'italic))
+  (slime-repl-result-face (:foreground Blue))
+  (slime-repl-prompt-face (:inherit 'minibuffer-prompt :weight 'normal))
+  (slime-repl-input-face (:inherit 'default))
+  (slime-repl-inputed-output-face (:foreground Green))
+  (sldb-restart-type-face (:foreground PaleOrange))
+  (sldb-restartable-frame-line-face (:foreground Blue))
+  (sldb-restart-number-face (:foreground Cyan))
+  (sldb-section-face (:slant 'italic :foreground Magenta))
+  (sldb-frame-label-face (:foreground BrightBlack :background EditorBackground))
+  (slime-repl-output-mouseover-face (:underline t :inherit 'slime-repl-inputed-output-face))
+
+  (slime-note-face (:underline Yellow))
+  (slime-style-warning-face (:underline Caret))
+  (slime-warning-face (:underline Highlight-Orange))
+  (slime-error-face (:underline "red"))
+
+  (slime-inspector-type-face (:inherit 'font-lock-type-face))
+  (slime-inspector-action-face (:foreground Cyan))
+  (slime-inspector-value-face (:inherit 'font-lock-builtin-face))
+  (slime-inspector-label-face (:foreground Magenta))
+  (slime-inspector-topline-face nil)
+  (slime-apropos-label (:inherit 'italic))
+  (slime-apropos-symbol (:inherit 'bold))
+  (slime-highlight-face (:underline nil :inherit 'highlight))
+  (slime-reader-conditional-face (:inherit 'font-lock-comment-face))
 
   ;; Tree-sitter
   (tree-sitter-hl-face:method (:foreground Blue))

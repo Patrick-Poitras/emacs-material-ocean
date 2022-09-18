@@ -39,10 +39,10 @@ Let me know if you'd like me to add your favorite mode. I'll prioritize adding i
 * diff/ediff
 * eshell
 * org-mode
+* slime
 
 Coming soon:
 * dired
-* slime
 * markdown
 
 # Notes
