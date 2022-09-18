@@ -34,16 +34,19 @@ Then, right below that, add the following line to load the theme.
 I'm continuously adding new modes at the moment, so this list will change.
 Let me know if you'd like me to add your favorite mode. I'll prioritize adding it.
 
-* tree-sitter-hl-mode
+* tree-sitter-hl-mode (needs checking)
 * magit-mode
 * diff/ediff
+* org-mode
+
 
 Coming soon:
-
-* org-mode
+* dired
+* slime
 
 # Notes
 
 See the original pallettes [here](https://github.com/material-theme/vsc-material-theme/blob/a0079e8d0cc8711cd81d410827fcc16bcb1f9e6b/scripts/generator/settings/specific/ocean-hc.ts)
 
 It's made with [autothemer](https://github.com/jasonm23/autothemer), with some use of tools like Paletton and [fontify-face](https://github.com/Fuco1/fontify-face).
+  
