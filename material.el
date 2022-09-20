@@ -160,7 +160,7 @@
   (magit-diff-hunk-region (:extend t :inherit 'bold))
   (magit-diff-hunk-heading-selection (:inherit 'magit-diff-lines-heading))
   (magit-diff-hunk-heading-highlight (:inherit 'magit-blame-highlight))
-  (magit-diff-file-heading-highlight (:foreground White :inherit 'magit-diff-hunk-heading))
+  (magit-diff-file-heading-highlight (:foreground Highlight-Gray :inherit 'magit-diff-hunk-heading))
   (magit-diff-file-heading-selection (:slant 'italic :foreground White
 					     :inherit 'magit-diff-file-heading))
   (magit-diff-file-heading (:weight 'bold :extend t))
