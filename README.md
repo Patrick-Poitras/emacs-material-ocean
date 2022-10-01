@@ -40,6 +40,7 @@ Let me know if you'd like me to add your favorite mode. I'll prioritize adding i
 * eshell
 * org-mode
 * slime
+* sly (partial, seeking feedback on sticker colors)
 
 Coming soon:
 * dired
@@ -50,4 +51,4 @@ Coming soon:
 See the original pallettes [here](https://github.com/material-theme/vsc-material-theme/blob/a0079e8d0cc8711cd81d410827fcc16bcb1f9e6b/scripts/generator/settings/specific/ocean-hc.ts)
 
 It's made with [autothemer](https://github.com/jasonm23/autothemer), with some use of tools like Paletton and [fontify-face](https://github.com/Fuco1/fontify-face).
-  
+

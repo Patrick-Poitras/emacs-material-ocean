@@ -52,12 +52,12 @@
   (error (:weight 'bold :foreground Red))
 
   (trailing-whitespace (:background "red2"))
-  
+
   (isearch (:background A-DiffFineBackground))
   (isearch-fail (:background "red4"))
   (query-replace (:inherit 'isearch))
   (match (:background B-DiffFineBackground))
-  
+
   (font-lock-warning-face (:foreground Red :weight 'bold))
   (font-lock-keyword-face (:foreground Cyan :slant 'italic :weight 'bold))
   (font-lock-function-name-face (:foreground Blue))
@@ -84,6 +84,9 @@
   ;;eshell-ls-missing
   ;;eshell-ls-special
   ;;eshell-ls-unreadable
+
+  (comint-highlight-input (:weight 'bold))
+  (comint-highlight-prompt (:inherit 'eshell-prompt))
 
   ;; Ediff
   (ediff-even-diff-A (:background DiffInactiveBackground))
@@ -114,7 +117,7 @@
   (diff-index (:inherit 'diff-file-header))
   (diff-file-header  (:extend t :foreground White :background "grey35"))
   (diff-header (:extend t :foreground PaleBlue :background "grey20"))
-  
+
   ;; Ido-mode
   ;; -> ido-indicator (not done)
   (ido-only-match (:foreground Green))
@@ -167,7 +170,7 @@
 
   (magit-diffstat-removed (:foreground Red))
   (magit-diffstat-added (:foreground Green))
-  
+
   (magit-process-ng (:foreground Red :inherit 'magit-section-heading))
   (magit-process-ok (:foreground Green :inherit 'magit-section-heading))
   (magit-mode-line-process-error (:inherit 'error))
@@ -193,7 +196,7 @@
   (magit-sequence-head (:foreground Cyan))
   (magit-sequence-part (:foreground Yellow))
   (magit-sequence-stop (:foreground Green))
-  
+
   ;;(magit-section-child-count nil)
   ;;(magit-section-heading-selection (:extend t :foreground ModeBarBackground))
   (magit-section-secondary-heading (:weight 'bold :extend t))
@@ -313,12 +316,13 @@
   (outline-4 (:foreground Magenta))
   (outline-5 (:foreground Yellow))
   (outline-6 (:foreground Red))
-  (outline-7 (:foreground Green))  
+  (outline-7 (:foreground Green))
   (outline-8 (:foreground PaleOrange))
-  
+
   ;;;; Language font-locking
-  ;;Slime/sldb
+  ;;Slime/sldb/sly
   (slime-repl-output-face (:foreground PaleOrange :slant 'italic))
+
   (slime-repl-result-face (:foreground Blue))
   (slime-repl-prompt-face (:inherit 'minibuffer-prompt :weight 'normal))
   (slime-repl-input-face (:inherit 'default))
@@ -345,7 +349,46 @@
   (slime-highlight-face (:underline nil :inherit 'highlight))
   (slime-reader-conditional-face (:inherit 'font-lock-comment-face))
 
-  ;; Tree-sitter
+  ;; Sly
+  (sly-action-face (:foreground Green))
+  (sly-mrepl-output-face (:foreground PaleOrange :slant 'italic))
+  (sly-mrepl-note-face nil)
+  (sly-mrepl-prompt-face (:inherit 'minibuffer-prompt :weight 'normal))
+  (sly-part-button-face (:foreground Green))
+
+  (sly-error-face (:underline Red))
+  (sly-warning-face (:underline Highlight-Orange))
+  (sly-style-warning-face (:underline Caret))
+  (sly-note-face (:underline Yellow))
+  (sly-db-topline-face nil)
+  (sly-db-condition-face (:inherit 'error))
+  (sly-db-restart-number-face  (:foreground Cyan))
+  (sly-db-section-face (:foreground Magenta :slant 'italic))
+  (sly-db-restartable-frame-line-face  (:foreground Blue))
+
+  (sly-db-frame-label-face  (:foreground Cyan))
+
+  (sly-db-restart-face nil)
+  (sly-db-frame-line-face nil)
+  (sly-db-non-restartable-frame-line-face nil)
+  (sly-db-local-name-face nil)
+  (sly-db-catch-tag-face nil)
+  (sly-mode-line (:weight 'bold :foreground PaleOrange))
+  (sly-apropos-symbol  (:inherit 'sly-part-button-face))
+  (sly-apropos-label  (:inherit 'italic))
+  (sly-reader-conditional-face   (:inherit 'font-lock-comment-face))
+
+  (hi-blue (:foreground Black :background Blue))
+  (hi-green (:foreground Black :background Green))
+  (hi-pink (:foreground Black :background "IndianRed1"))
+
+  (sly-stickers-placed-face  (:foreground Black :background EditorForeground))
+  (sly-stickers-armed-face  (:strike-through nil :inherit 'hi-blue))
+  (sly-stickers-recordings-face   (:strike-through nil :inherit 'hi-green))
+  (sly-stickers-empty-face   (:strike-through nil :inherit 'hi-pink))
+  (sly-stickers-exited-non-locally-face   (:strike-through t :inherit 'sly-stickers-empty-face))
+
+  ;; tree-sitter
   (tree-sitter-hl-face:method (:foreground Blue))
   (tree-sitter-hl-face:method.call (:foreground Blue))
   (tree-sitter-hl-face:function (:foreground Blue))
@@ -357,7 +400,7 @@
   (tree-sitter-hl-face:operator (:foreground Magenta))
   (tree-sitter-hl-face:number (:foreground PaleOrange))
   (tree-sitter-hl-face:property (:inherit 'default))
-  (tree-sitter-hl-face:constructor (:foreground Yellow))  
+  (tree-sitter-hl-face:constructor (:foreground Yellow))
   (tree-sitter-hl-face:constant.builtin (:foreground PaleOrange))
   (tree-sitter-hl-face:punctuation (:foreground Cyan))
   (tree-sitter-hl-face:type (:foreground Yellow))
