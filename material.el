@@ -58,6 +58,23 @@
   (query-replace (:inherit 'isearch))
   (match (:background B-DiffFineBackground))
 
+  (ansi-color-black (:foreground Black))
+  (ansi-color-red (:foreground Red))
+  (ansi-color-green (:foreground Green))
+  (ansi-color-yellow (:foreground Yellow))
+  (ansi-color-blue (:foreground Blue))
+  (ansi-color-magenta (:foreground Magenta))
+  (ansi-color-cyan (:foreground Cyan))
+  (ansi-color-white (:foreground White))
+  (ansi-color-bright-black (:foreground BrightBlack))
+  (ansi-color-bright-red (:foreground Red))
+  (ansi-color-bright-green (:foreground Green))
+  (ansi-color-bright-yellow (:foreground Caret))
+  (ansi-color-bright-blue (:foreground Blue))
+  (ansi-color-bright-magenta (:foreground Magenta))
+  (ansi-color-bright-cyan (:foreground Cyan))
+  (ansi-color-bright-white (:foreground White))
+
   (font-lock-warning-face (:foreground Red :weight 'bold))
   (font-lock-keyword-face (:foreground Cyan :slant 'italic :weight 'bold))
   (font-lock-function-name-face (:foreground Blue))
@@ -118,6 +135,9 @@
   (diff-file-header  (:extend t :foreground White :background "grey35"))
   (diff-header (:extend t :foreground PaleBlue :background "grey20"))
 
+  ;; Eglot
+  (eglot-mode-line (:foreground Highlight-Orange :weight 'bold))
+  
   ;; Ido-mode
   ;; -> ido-indicator (not done)
   (ido-only-match (:foreground Green))
@@ -427,6 +447,12 @@
   (tree-sitter-hl-face:type.parameter  (:inherit 'font-lock-type-face))
   (tree-sitter-hl-face:function.special (:inherit 'font-lock-preprocessor-face))
   (tree-sitter-hl-face:function.builtin (:inherit 'font-lock-builtin-face))
+
+  (rust-unsafe (:inherit 'font-lock-warning-face))
+  (rust-question-mark (:weight 'bold :inherit 'font-lock-builtin-face))
+  (rust-ampersand-face (:foreground Magenta))
+  (rust-builtin-formatting-macro (:inherit 'font-lock-builtin-face))
+  (rust-string-interpolation (:slant 'italic :foreground Cyan))
 
   (js2-function-param (:inherit 'tree-sitter-hl-face:variable.parameter))
   (js2-function-call (:inherit 'tree-sitter-hl-face:function.call)))
