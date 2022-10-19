@@ -2,7 +2,7 @@ A port of the VSCode Community Material themes.
 
 The current collection is still a work in progress, and I've only tested the themes with my personal workflow. Please let me know if an element appears to have a clashing color associated to it, since I have to manually add faces in the main file for them to work.
 
-I'm planning to port all of the community material themes, but for now am only doing the one I like the most (Ocean).
+I'm planning to port all of the community material themes, but current focus is on Ocean and Palenight.
 
 # Screenshot!
 
