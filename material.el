@@ -96,10 +96,10 @@
   (eshell-ls-executable (:foreground Green))
   (eshell-ls-readonly (:foreground PaleOrange))
   (eshell-ls-archive (:foreground Magenta))
+  (eshell-ls-special (:foreground Red))
+  (eshell-ls-missing (:foreground Red))
   ;;eshell-ls-clutter
   ;;eshell-ls-product
-  ;;eshell-ls-missing
-  ;;eshell-ls-special
   ;;eshell-ls-unreadable
 
   (comint-highlight-input (:weight 'bold))
@@ -417,7 +417,7 @@
   (tree-sitter-hl-face:variable.parameter (:foreground Red))
   (tree-sitter-hl-face:variable.builtin (:foreground Red))
   (tree-sitter-hl-face:variable (:inherit 'default))
-  (tree-sitter-hl-face:operator (:foreground Magenta))
+  (tree-sitter-hl-face:operator (:foreground Magenta :slant 'normal))
   (tree-sitter-hl-face:number (:foreground PaleOrange))
   (tree-sitter-hl-face:property (:inherit 'default))
   (tree-sitter-hl-face:constructor (:foreground Yellow))
