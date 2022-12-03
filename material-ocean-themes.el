@@ -1,6 +1,5 @@
-;;; material-internal.el --- File that defines a macro common to the material themes
 ;;; -*- lexical-binding : t -*-
-;;; material-internal.el --- Material themes internals
+;;; material-ocean-themes.el --- Blue material themes for emacs.
 ;; URL: https://github.com/Patrick-Poitras/emacs-material-ocean
 ;; Version: 1.0
 ;; Package-Requires: ((emacs "26.1"))
@@ -566,5 +565,5 @@
   (add-to-list 'custom-theme-load-path
                (file-name-as-directory (file-name-directory load-file-name))))
 
-(provide 'material-internal)
-;;; material-internal.el ends here
+(provide 'material-ocean-themes)
+;;; material-ocean-themes.el ends here

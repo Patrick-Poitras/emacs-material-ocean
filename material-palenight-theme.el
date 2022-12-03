@@ -3,7 +3,7 @@
 ;; URL: https://github.com/Patrick-Poitras/emacs-material-ocean
 ;; Version: 1.0
 ;; Package-Requires: ((emacs "26.1"))
-(require 'material-internal)
+(require 'material-ocean-themes)
 
 ;;; Code:
 
