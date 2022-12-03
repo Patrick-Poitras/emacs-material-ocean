@@ -1,9 +1,13 @@
+;;; material-internal.el --- File that defines a macro common to the material themes
 ;;; -*- lexical-binding : t -*-
+;;; material-internal.el --- Material themes internals
+;; URL: https://github.com/Patrick-Poitras/emacs-material-ocean
+;; Version: 1.0
+;; Package-Requires: ((emacs "26.1"))
+
 (require 'autothemer)
 
-;; This file provides the base template upon which the
-;; rest of the themes are built.
-(provide 'material-internal)
+;;; Code:
 
 (defmacro deftheme-material (name description palette &rest body)
   `(autothemer-deftheme ,name
@@ -272,9 +276,9 @@
   (magit-header-line-key        (:inherit 'font-lock-builtin-face))
   (magit-header-line-log-select (:inherit 'bold))
 
-  (magit-log-author             (:foreground Magenta))
-  (magit-log-date               (:weight 'normal :slant 'normal :foreground PaleBlue))
-  (magit-log-graph              (:foreground PaleBlue))
+  (magit-log-author (:foreground Magenta))
+  (magit-log-date   (:weight 'normal :slant 'normal :foreground PaleBlue))
+  (magit-log-graph  (:foreground PaleBlue))
   
   (magit-mode-line-process       (:inherit 'mode-line-emphasis))
   (magit-mode-line-process-error (:inherit 'error))
@@ -331,23 +335,23 @@
   (org-headline-done (:inherit 'org-done :underline nil))
   (org-headline-todo (:inherit 'org-todo))
 
-  (org-agenda-calendar-event     (:inherit 'default))
-  (org-agenda-calendar-sexp      (:inherit 'default))
-  (org-agenda-clocking           (:inherit 'secondary-selection))
-  (org-agenda-column-dateline    (:inherit 'org-column))
-  (org-agenda-current-time       (:inherit 'org-time-grid))
-  (org-agenda-date               (:foreground Cyan))
-  (org-agenda-date-today         (:weight 'bold :slant 'italic :foreground Cyan))
-  (org-agenda-date-weekend       (:inherit 'org-agenda-date))
-  (org-agenda-diary              (:inherit 'default))
-  (org-agenda-dimmed-todo-face   (:foreground CommentsForeground))
-  (org-agenda-done               (:foreground Green))
-  (org-agenda-filter-category    (:inherit 'mode-line))
-  (org-agenda-filter-effort      (:inherit 'mode-line))
-  (org-agenda-filter-regexp      (:inherit 'mode-line))
-  (org-agenda-filter-tags        (:inherit 'mode-line))
-  (org-agenda-restriction-lock   (:foreground PaleBlue :background "grey20"))
-  (org-agenda-structure          (:foreground Cyan))
+  (org-agenda-calendar-event    (:inherit 'default))
+  (org-agenda-calendar-sexp     (:inherit 'default))
+  (org-agenda-clocking          (:inherit 'secondary-selection))
+  (org-agenda-column-dateline   (:inherit 'org-column))
+  (org-agenda-current-time      (:inherit 'org-time-grid))
+  (org-agenda-date              (:foreground Cyan))
+  (org-agenda-date-today        (:weight 'bold :slant 'italic :foreground Cyan))
+  (org-agenda-date-weekend      (:inherit 'org-agenda-date))
+  (org-agenda-diary             (:inherit 'default))
+  (org-agenda-dimmed-todo-face  (:foreground CommentsForeground))
+  (org-agenda-done              (:foreground Green))
+  (org-agenda-filter-category   (:inherit 'mode-line))
+  (org-agenda-filter-effort     (:inherit 'mode-line))
+  (org-agenda-filter-regexp     (:inherit 'mode-line))
+  (org-agenda-filter-tags       (:inherit 'mode-line))
+  (org-agenda-restriction-lock  (:foreground PaleBlue :background "grey20"))
+  (org-agenda-structure         (:foreground Cyan))
   
   (org-archived                  (:inherit 'shadow))
   (org-block-begin-line          (:extend t :foreground CommentsForeground))
@@ -552,14 +556,15 @@
   (tree-sitter-hl-face:variable.parameter
    (:foreground Red))
   (tree-sitter-hl-face:variable.special
-   (:foreground Red :slant 'italic))
-  )
+   (:foreground Red :slant 'italic)))
  
  ,@body))
-
 
 ;;;###autoload
 (when (and (boundp 'custom-theme-load-path)
            load-file-name)
   (add-to-list 'custom-theme-load-path
                (file-name-as-directory (file-name-directory load-file-name))))
+
+(provide 'material-internal)
+;;; material-internal.el ends here

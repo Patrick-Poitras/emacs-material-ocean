@@ -1,4 +1,11 @@
+;;; -*- lexical-binding : t -*-
+;;; material-ocean-theme.el --- Material themes: ocean
+;; URL: https://github.com/Patrick-Poitras/emacs-material-ocean
+;; Version: 1.0
+;; Package-Requires: ((emacs "26.1"))
 (require 'material-internal)
+
+;;; Code:
 
 (deftheme-material
   material-ocean
@@ -52,9 +59,7 @@
    (C-DiffCurrentBackground  "#423D0F")
    (C-DiffFineBackground     "#5C5618")
    (Add-DiffCurrentBackground "#17380C")
-   (Add-DiffFineBackground "#224E14")
-   ))
-
+   (Add-DiffFineBackground "#224E14")))
 
 ;;;###autoload
 (when (and (boundp 'custom-theme-load-path)
@@ -65,3 +70,4 @@
 	       (file-name-as-directory (file-name-directory load-file-name))))
 
 (provide-theme 'material-ocean)
+;;; material-ocean-theme.el ends here
