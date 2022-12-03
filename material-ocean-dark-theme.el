@@ -1,13 +1,14 @@
-;;; -*- lexical-binding : t -*-
-;;; material-ocean-dark-theme.el --- Material themes: ocean-dark
+;;; material-ocean-dark-theme.el --- Material themes: ocean-dark -*- lexical-binding : t -*-
 ;; URL: https://github.com/Patrick-Poitras/emacs-material-ocean
 ;; Version: 1.0
 ;; Package-Requires: ((emacs "26.1"))
 (require 'material-ocean-themes)
 
-;;; Code:
+;;; Commentary:
+;; Material theme ocean -- dark variant.
 
-(deftheme-material
+;;; Code:
+(material-ocean-themes-deftheme
  material-ocean-dark
  "A port of the VSCode theme 'Community Material Themes - Ocean Dark'"
 
@@ -25,9 +26,6 @@
 
   (HighlightActiveBackground "#090B10")
   (LineNumberUnselected      "#252836")
-
-  (ScrollBarForeground "#2B2C31")
-  (ScrollBarBackground "#131315")
 
   (Highlight-Orange "DarkOrange2")
   (Highlight-Gray   "LightSteelBlue")

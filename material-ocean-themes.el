@@ -1,14 +1,20 @@
-;;; -*- lexical-binding : t -*-
-;;; material-ocean-themes.el --- Blue material themes for emacs.
+;;; material-ocean-themes.el --- Blue material themes for emacs -*- lexical-binding : t -*-
 ;; URL: https://github.com/Patrick-Poitras/emacs-material-ocean
 ;; Version: 1.0
 ;; Package-Requires: ((emacs "26.1"))
 
 (require 'autothemer)
 
-;;; Code:
+;;; Commentary:
+;; This is a port of the VS Code Material Community Edition
+;; themes "Ocean" and "Palenight"
 
-(defmacro deftheme-material (name description palette &rest body)
+;;; Code:
+(defmacro material-ocean-themes-deftheme (name description palette &rest body)
+  "Wrapper macro for `autothemer-deftheme'.
+How it works:
+Allows for the creation of a theme, with a NAME and DESCRIPTION.
+The BODY assigns the PALETTE to the faces."
   `(autothemer-deftheme ,name
 			,description
 			,palette

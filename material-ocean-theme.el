@@ -1,13 +1,14 @@
-;;; -*- lexical-binding : t -*-
-;;; material-ocean-theme.el --- Material themes: ocean
+;;; material-ocean-theme.el --- Material themes: ocean -*- lexical-binding : t -*-
 ;; URL: https://github.com/Patrick-Poitras/emacs-material-ocean
 ;; Version: 1.0
 ;; Package-Requires: ((emacs "26.1"))
 (require 'material-ocean-themes)
 
-;;; Code:
+;;; Commentary:
+;; Material theme ocean -- regular.
 
-(deftheme-material
+;;; Code:
+(material-ocean-themes-deftheme
   material-ocean
   "A port of the VSCode theme 'Community Material Themes - Ocean'"
   

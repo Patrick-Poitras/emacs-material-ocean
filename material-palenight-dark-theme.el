@@ -1,13 +1,14 @@
-;;; -*- lexical-binding : t -*-
-;;; material-palenight-dark-theme.el --- Material themes: palenight-dark
+;;; material-palenight-dark-theme.el --- Material themes: palenight-dark -*- lexical-binding : t -*-
 ;; URL: https://github.com/Patrick-Poitras/emacs-material-ocean
 ;; Version: 1.0
 ;; Package-Requires: ((emacs "26.1"))
 (require 'material-ocean-themes)
 
-;;; Code:
+;;; Commentary:
+;; Material theme palenight -- dark variant.
 
-(deftheme-material
+;;; Code:
+(material-ocean-themes-deftheme
   material-palenight-dark
   "A port of the VSCode theme 'Community Material Themes - Palenight'"
   
