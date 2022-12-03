@@ -137,6 +137,7 @@
 
   ;; Eglot
   (eglot-mode-line (:foreground Highlight-Orange :weight 'bold))
+  (eglot-diagnostic-tag-unnecessary-face (:underline (:style 'wave :color "gray20")))
   
   ;; Ido-mode
   ;; -> ido-indicator (not done)
@@ -453,6 +454,20 @@
   (rust-ampersand-face (:foreground Magenta))
   (rust-builtin-formatting-macro (:inherit 'font-lock-builtin-face))
   (rust-string-interpolation (:slant 'italic :foreground Cyan))
+
+  (which-func (:foreground Blue))
+  (flymake-error (:underline (:style 'wave :color PaleRed)))
+  (flymake-warning (:underline (:style 'wave :color Magenta)))
+  (flymake-note (:underline (:style 'wave :color Yellow)))
+
+  (compilation-error (:inherit 'error))
+  (compilation-warning (:inherit 'warning))
+  (compilation-info (:inherit 'success))
+  (compilation-mode-line-fail (:weight 'bold :inherit 'compilation-error))
+  (compilation-mode-line-run  (:inherit 'compilation-warning))
+  (compilation-mode-line-exit (:weight 'bold :inherit 'compilation-info))
+  (compilation-line-number (:inherit 'font-lock-keyword-face))
+  (compilation-column-number (:inherit 'font-lock-doc-face))
 
   (js2-function-param (:inherit 'tree-sitter-hl-face:variable.parameter))
   (js2-function-call (:inherit 'tree-sitter-hl-face:function.call)))
