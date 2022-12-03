@@ -22,6 +22,7 @@ You then need to add the folder to `custom-themes-load-path`. This can be done b
 
 ```
 (push "/path/to/directory/folder/emacs-material-ocean/" custom-theme-load-path)
+(push "/path/to/directory/folder/emacs-material-ocean/" load-path)
 ```
 
 Then, right below that, add the following line to load the theme.
