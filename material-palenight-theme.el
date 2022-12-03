@@ -20,15 +20,15 @@
 
    (EditorForeground       "#A6ACCD")
    (CommentsForeground     "#4B526D")
-   (SelectionBackground    "#333955") ;; Original was #717CB450
+   (SelectionBackground    "#333955")
    (ModeBarBackground      "#1B1E2B")
    (ModeBarForeground      "#676E95")
    
    (HighlightActiveBackground "#090B10")
-   (LineNumberUnselected "#252836")
+   (LineNumberUnselected      "#252836")
    
-   (ScrollBarForeground "#2B2C31") ;;#8F93A230
-   (ScrollBarBackground "#131315") ;;#8F93A220
+   (ScrollBarForeground "#2B2C31")
+   (ScrollBarBackground "#131315")
 
    (Highlight-Orange "DarkOrange2")
    (Highlight-Gray   "LightSteelBlue")
@@ -49,17 +49,15 @@
    (PaleRed       "#FF7777")
    (PaleOrange    "#F78C6C")
 
-   (debug "#FF00FF") ;; ugly color for debugging.
-
-   (DiffInactiveBackground   "#0E152D") ;; todo, find something else?
-   (A-DiffCurrentBackground  "#3F0E15")
-   (A-DiffFineBackground     "#581720")
-   (B-DiffCurrentBackground  "#153B3F") ;; really nice, use for magit?
-   (B-DiffFineBackground     "#23494C")
-   (C-DiffCurrentBackground  "#423D0F")
-   (C-DiffFineBackground     "#5C5618")
+   (DiffInactiveBackground    "#0E152D")
+   (A-DiffCurrentBackground   "#3F0E15")
+   (A-DiffFineBackground      "#581720")
+   (B-DiffCurrentBackground   "#153B3F")
+   (B-DiffFineBackground      "#23494C")
+   (C-DiffCurrentBackground   "#423D0F")
+   (C-DiffFineBackground      "#5C5618")
    (Add-DiffCurrentBackground "#17380C")
-   (Add-DiffFineBackground "#224E14")))
+   (Add-DiffFineBackground    "#224E14")))
 
 ;;;###autoload
 (when (and (boundp 'custom-theme-load-path)
