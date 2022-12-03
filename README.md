@@ -1,10 +1,17 @@
 A port of the VSCode Community Material themes. 
 
-This adds the very nice oceanic and palenight themes to emacs.
+This adds the very nice oceanic and palenight themes to emacs, featuring a dark and darker background.
+
+* `material-ocean`
+* `material-ocean-dark`
+* `material-palenight`
+* `material-palenight-dark`
+
+See a comparison of the four themes [here](/comparison-screenshots/comparison.md)
 
 This package starts from a base of nothing, so may not include all faces, if you see something that clashes, please make an issue so that I can add them.
 
-# Screenshot!
+# Screenshots!
 
 ![](material-ocean-screenshot.png)
 
