@@ -1,6 +1,10 @@
 ;;; -*- lexical-binding : t -*-
 (require 'autothemer)
 
+;; This file provides the base template upon which the
+;; rest of the themes are built.
+(provide 'material-internal)
+
 (defmacro deftheme-material (name description palette &rest body)
   `(autothemer-deftheme ,name
 			,description

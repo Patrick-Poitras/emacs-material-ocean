@@ -1,4 +1,4 @@
-(load-file (concat (file-name-as-directory (file-name-directory load-file-name)) "material.el"))
+(require 'material-internal)
 
 (deftheme-material
  material-ocean-dark
