@@ -27,7 +27,7 @@ The BODY assigns the PALETTE to the faces."
   (highlight (:inherit 'region))
   (lazy-highlight (:inherit 'region))
   (mouse-drag-and-drop-region (:inherit 'region))
-  (region  (:background SelectionBackground))
+  (region  (:background SelectionBackground :distant-foreground "#697cbf"))
   (secondary-selection (:extend t :background SelectionBackground))
 
   (mode-line (:foreground Highlight-Gray :background ModeBarBackground))

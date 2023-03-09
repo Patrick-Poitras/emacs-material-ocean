@@ -19,7 +19,7 @@
    (EditorBackground       "#0F111A")
    (EditorBackgroundDarker "#090B10")
    (EditorForeground       "#A6ACCD")
-   (CommentsForeground     "#4B526D")
+   (CommentsForeground     "#576080")
    (SelectionBackground    "#333955")
    (ModeBarBackground      "#000000")
    (ModeBarForeground      "#4B526D")
